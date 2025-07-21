@@ -1,7 +1,6 @@
 #import <UniformTypeIdentifiers/UniformTypeIdentifiers.h>
 #import "authenticator/BaseAuthenticator.h"
 #import "AFNetworking.h"
-#import "ALTServerConnection.h"
 #import "CustomControlsViewController.h"
 #import "DownloadProgressViewController.h"
 #import "JavaGUIViewController.h"
@@ -373,7 +372,6 @@ static void *ProgressObserverContext = &ProgressObserverContext;
     BOOL hasTrollStoreJIT = getEntitlementValue(@"com.apple.private.local.sandboxed-jit");
 
     if (isJITEnabled(false)) {
-        [ALTServerManager.sharedManager stopDiscovering];
         handler();
         return;
     } else if (hasTrollStoreJIT) {
