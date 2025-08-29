@@ -14,10 +14,12 @@
 
 // The play button
 "Play" = "Hrát";
+"Details" = "Detaily";
 
 // Version categories
 "Installed" = "Nainstalováno";
 "Releases" = "Vydání";
+"Unstable" = "Nestabilní";
 "Old-beta" = "Stará beta";
 "Old-alpha" = "Stará alfa";
 
@@ -27,6 +29,10 @@
 "Move" = "Pohnout";
 "Remove" = "Odstranit";
 "Resize" = "Změnit velikost";
+// Visibility
+"Always" = "Vždy";
+"In game" = "Ve hře";
+"In menu" = "V menu";
 "custom_controls.button_edit.name" = "Název";
 "custom_controls.button_edit.size" = "Velikost";
 "custom_controls.button_edit.mapping" = "Mapování";
@@ -39,6 +45,7 @@
 "custom_controls.button_edit.stroke_color" = "Barva obrysu";
 "custom_controls.button_edit.corner_radius" = "Poloměr rohu (%)";
 "custom_controls.button_edit.opacity" = "Průhlednost (%)";
+"custom_controls.button_edit.visibility" = "Viditelnost";
 
 "custom_controls.button_menu.add_subbutton" = "Přidat podtlačítko";
 "custom_controls.control_menu.discard_changes" = "Zahodit změny";
@@ -52,6 +59,7 @@
 "custom_controls.control_menu.safe_area" = "Bezpečná oblast";
 "custom_controls.control_menu.add_button" = "Přidat tlačítko";
 "custom_controls.control_menu.add_drawer" = "Přidat šuplík";
+"custom_controls.control_menu.add_joystick" = "Přidat joystick";
 "custom_controls.error.incompatible" = "Tato verze ovládání (kód %d) v tomto sestavení spouštěče není implementována.";
 "custom_controls.hint" = "Pro více možností dlouze podržte kdekoli na obrazovce";
 
@@ -109,6 +117,7 @@
 "login.msa.progress.checkMCProfile" = "(5/5) Kontrola Minecraft účtu";
 
 "News" = "Novinky";
+"Profiles" = "Profily";
 "Settings" = "Nastavení";
 
 "preference.section.general" = "Obecné Nastavení";
@@ -201,6 +210,10 @@
 "preference.detail.gyroscope_invert_x_axis" = "Obrací osu X gyroskopu";
 "preference.title.gyroscope_sensitivity" = "Citlivost gyroskopového ovládání";
 "preference.detail.gyroscope_sensitivity" = "Upravit citlivost gyroskopového ovládání";
+"preference.manage_runtime.default.1165" = "1.16.5 a starší";
+"preference.manage_runtime.default.117" = "1.17 a novější";
+"preference.manage_runtime.footer.java8" = "Toto je výchozí verze pro Minecraft 1.16.5 a starší.";
+"preference.manage_runtime.footer.java17" = "Toto je výchozí verze pro Minecraft 1.17 a novější.";
 
 "preference.title.java_args" = "JVM spouštěcí argumenty";
 "preference.detail.java_args" = "Předá argumenty Javě spouštějíc Minecraft. Buďte opatrní, může to způsobit pád hry byly-li upraveny neprávně.";
@@ -222,6 +235,10 @@
 "preference.detail.debug_hide_home_indicator" = "Toto vypne zamykání domovského indikátoru. Budete muset použít Guided Acces ke skrytí a zamčení domovského indikátoru najednou.";
 
 "preference.profile.title.name" = "Název";
+"preference.profile.title.version" = "Verze";
+"preference.profile.title.version_type" = "Typ verze";
+"preference.profile.title.default_touch_control" = "Dotykové ovládání";
+"profile.title.create" = "Vytvořit nový profil";
 
 "controller_configurator.title.current" = "Soubor nastavení Gamepadu";
 
