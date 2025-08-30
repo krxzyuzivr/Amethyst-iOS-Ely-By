@@ -34,6 +34,8 @@
 "Always" = "Vždy";
 "In game" = "Ve hře";
 "In menu" = "V menu";
+
+"custom_controls.button_edit.forward_lock" = "Uzamknout dopředu";
 "custom_controls.button_edit.name" = "Název";
 "custom_controls.button_edit.size" = "Velikost";
 "custom_controls.button_edit.mapping" = "Mapování";
@@ -66,6 +68,9 @@
 
 "init.migrateDir" = "Složka dat Amethystu je nyní %@. Všechna vaše data byla přesunuta do nového umístění.";
 
+"java.error.missing_main_class" = "%@ chybí atribut hlavní třídy. Pokud se jedná o mód, vložte jej do složky \"mods\" vybrané instance.";
+"java.error.missing_runtime" = "%@ vyžaduje pro spuštení Javu %d nebo novější. Nejprve jej nainstalujte a zadejte ve správě Runtimes.";
+
 "launcher.mcl.downloading_file" = "Stahování %@";
 "launcher.mcl.error_download" = "Nepodařilo se stáhnout %@: %@";
 
@@ -85,6 +90,7 @@
 "login.jit.fail" = "JIT nemohla být zapnuta.";
 "login.jit.fail.title" = "JIT nemohla být zapnuta na vašem zařízení.";
 "login.jit.fail.description" = "Nebylo možno použít jakoukoliv integraci k automatickému zapnutí JIT na vašem zařízení, tudíž musí být zapnuta ručně. Chyby se zaznamenaly do latestlot.txt.";
+"login.jit.fail.description_unsupported" = "Byla zjištěna nepodporovaná metoda instalace. Prosím přeinstalujte pomocí jedné z podporovaných metod.";
 
 // Login buttons
 "login.menu.sendlogs" = "Odeslat záznamy";
@@ -100,6 +106,8 @@
 "login.warn.message.legacy_ios" = "Ke spuštění příštího velkého vydání, toto zařízení musí mít spuštěn iOS 14 či novější.";
 "login.warn.title.limited_ram" = "Toto zařízení má dostupné omezené množství paměti.";
 "login.warn.message.limited_ram" = "Doporučujeme ponechat automatickou RAM zapnutu, aby se zabránilo nestabilitě a problémům s výkonem.";
+"login.warn.title.ios19_jitdead" = "Amethyst není podporován na iOS 26 nebo novější.";
+"login.warn.message.ios19_jitdead" = "Kvůli změnám v iOS které potlačují schopnost povolit JIT, Amethyst nemůže ve svém současném stavu fungovat a vyžaduje těžký výzkum, aby nalezl novou cestu vpřed.\n\nStisknutím OK aplikaci zavřete.";
 
 "login.warn.title.demomode" = "Váš účet demo je";
 "login.warn.message.demomode" = "Jako náhrada za offline a místní režim, demo režim povolí přihlášení do Microsoft účtu, jenž hru nevlastní, a hrát zkušební verzi Java edice, přidanou v 1.3.1 a novějších verzích. Starší verze obsahují plnou hru, majíce ji i v oficiálním spouštěči, jenž nemá pro ně omezení. Viz naši webovou stránku pro více informací o této změně z offline režimu.";
@@ -220,6 +228,7 @@
 "preference.detail.gyroscope_invert_x_axis" = "Obrací osu X gyroskopu";
 "preference.title.gyroscope_sensitivity" = "Citlivost gyroskopového ovládání";
 "preference.detail.gyroscope_sensitivity" = "Upravit citlivost gyroskopového ovládání";
+"preference.title.confirm.delete_runtime" = "%@ bude odstraněno";
 "preference.manage_runtime.header.default" = "Preferovaná verze Javy";
 "preference.manage_runtime.default.1165" = "1.16.5 a starší";
 "preference.manage_runtime.default.117" = "1.17 a novější";
@@ -232,6 +241,7 @@
 "preference.placeholder.java_args" = "Určit argumenty...";
 "preference.title.env_variables" = "Proměnné prostředí";
 "preference.detail.env_variables" = "Nastavte vlastní proměnné prostředí při spuštění Minecraftu. Buďte opatrní, může způsobit pád hry, pokud je nevhodně nastaveno.";
+"preference.placeholder.env_variables" = "Zadejte proměnné...";
 "preference.title.auto_ram" = "Auto RAM";
 "preference.detail.auto_ram" = "Automaticky bude měnit množství RAM";
 "preference.warn.auto_ram" = "Vypnutí této možnosti na nejailbreakovaných zařízení může způsobit nestabilitu je-li změno. Pokračujte s opatrností.";
@@ -254,7 +264,13 @@
 "preference.profile.title.version" = "Verze";
 "preference.profile.title.version_type" = "Typ verze";
 "preference.profile.title.default_touch_control" = "Dotykové ovládání";
+
+"profile.error.name_exists" = "Profil s tímto názvem již existuje. Použijte jiný název.";
+"profile.section.instance" = "Nastavení herní instance";
+"profile.section.profiles" = "Profily v této instanci";
 "profile.title.create" = "Vytvořit nový profil";
+"profile.title.separate_preference" = "Izolovat nastavení";
+"profile.detail.separate_preference" = "Povolte tuto možnost pro izolaci změn provedených v nastavení. Reset obnoví globální nastavení namísto výchozího nastavení.";
 "profile.title.install_fabric_quilt" = "Instalovat Fabric/Quilt";
 
 "controller_configurator.title.current" = "Soubor nastavení Gamepadu";
