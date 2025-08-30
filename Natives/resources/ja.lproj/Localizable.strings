@@ -30,6 +30,10 @@
 "Move" = "移動";
 "Remove" = "消去";
 "Resize" = "サイズ調整";
+// Visibility
+"Always" = "常時";
+"In game" = "ゲーム内";
+"In menu" = "メニュー内";
 "custom_controls.button_edit.name" = "名前";
 "custom_controls.button_edit.size" = "サイズ";
 "custom_controls.button_edit.mapping" = "割り当て";
@@ -42,6 +46,7 @@
 "custom_controls.button_edit.stroke_color" = "線の色";
 "custom_controls.button_edit.corner_radius" = "角の半径 (%)";
 "custom_controls.button_edit.opacity" = "透明度 (%)";
+"custom_controls.button_edit.visibility" = "コントロールの可視性";
 
 "custom_controls.button_menu.add_subbutton" = "サブボタンを追加";
 "custom_controls.control_menu.discard_changes" = "変更を破棄";
@@ -55,10 +60,13 @@
 "custom_controls.control_menu.safe_area" = "セーフエリア";
 "custom_controls.control_menu.add_button" = "ボタンを追加";
 "custom_controls.control_menu.add_drawer" = "引き出しを追加";
+"custom_controls.control_menu.add_joystick" = "ジョイスティックを追加";
 "custom_controls.error.incompatible" = "この制御バージョン(コード %d) はこのランチャービルドでは実装されていません。";
 "custom_controls.hint" = "画面上の任意の場所を長押ししてオプションを追加";
 
 "init.migrateDir" = "Amethystのディレクトリが %@になりました。既存のすべてのデータが新しい場所に移動されました。";
+
+"java.error.missing_main_class" = "%@ にはメインクラス属性がありません。これがmodの場合は、選択したインスタンスの「mods」フォルダに入れてください。";
 
 "launcher.menu.custom_controls" = "カスタムコントロール";
 
