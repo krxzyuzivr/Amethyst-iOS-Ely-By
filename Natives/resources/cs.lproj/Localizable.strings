@@ -18,6 +18,7 @@
 
 // Version categories
 "Installed" = "Nainstalováno";
+"Snapshot" = "Vývojová verze";
 "Releases" = "Vydání";
 "Unstable" = "Nestabilní";
 "Old-beta" = "Stará beta";
@@ -69,9 +70,11 @@
 "launcher.mcl.error_download" = "Nepodařilo se stáhnout %@: %@";
 
 "launcher.menu.custom_controls" = "Vlastní ovládací prvky";
+"launcher.menu.execute_jar" = "Spustit .jar";
 
 "launcher.wait_jit.title" = "Čekám na JIT";
 "launcher.wait_jit.message" = "Amethyst potřebuje kompilaci Just-in-time, aby Java mohla fungovat maximální rychlostí.";
+"launcher.wait_jit_trollstore.message" = "Pokud stále vidíte tuto zprávu, povolte prosím URL schéma v TrollStore.";
 
 "login.error.username.outOfRange" = "Uživatelské jméno musí být dlouhé alespoň 3 znaky a nanejvýše 16 znaků";
 
@@ -165,6 +168,8 @@
 
 "preference.title.renderer.release.auto" = "Automaticky";
 "preference.title.renderer.release.gl4es" = "svatý gl4es";
+"preference.title.renderer.release.angle" = "ANGLE";
+"preference.title.renderer.release.zink" = "Zink";
 
 "preference.title.renderer.debug.auto" = "Automaticky: gl4es či ANGLE";
 "preference.title.renderer.debug.gl4es" = "gl4es 1.1.4 - exportuje OpenGL 2.1";
@@ -178,12 +183,17 @@
 "preference.title.max_framerate" = "Maximální snímková frekvence";
 "preference.detail.max_framerate" = "Umožňuje omezit frekvenci snímků hry na 60FPS na displejích ProMotion.";
 
+"preference.title.performance_hud" = "Zobrazit HUD výkonu";
+"preference.detail.performance_hud" = "Je-li k dispozici, zobrazí se překryv monitorování výkonu.";
+
 "preference.title.fullscreen_airplay" = "AirPlay celé obrazovky";
 "preference.detail.fullscreen_airplay" = "Umožňuje zobrazovat okno hry na celé obrazovce na externím displeji bez zrcadlení všeho na obrazovce.";
 "preference.title.silence_other_audio" = "Pozastavit zvuk při otevření hry";
 "preference.detail.silence_other_audio" = "Zapněte pro umožnění Amethystu pozastavit zvuk z jiných aplikací, například Hudbu při spouštění hry.";
 "preference.title.silence_with_switch" = "Vypnout zvuk tichým přepínačem";
 "preference.detail.silence_with_switch" = "Povolte pro vypnutí zvuku při Tichém režimu. Sluchátka a externí reproduktory nejsou ovlivněny.";
+"preference.title.allow_microphone" = "Povolit vstup mikrofonu";
+"preference.detail.allow_microphone" = "Povolte pouze v případě, že používáte voice chat mód. Bude ignorován tichý režim a ovlivní to kvalitu zvuku z ostatních aplikací.";
 "preference.title.default_gamepad_ctrl" = "Nastavení ovladače";
 "preference.title.hardware_hide" = "Skrýt ovládací prvky při připojení zařízení";
 "preference.detail.hardware_hide" = "Povolte pro automatické vypínání překrytí na obrazovce při připojení myši či herního ovladače.";
@@ -210,19 +220,25 @@
 "preference.detail.gyroscope_invert_x_axis" = "Obrací osu X gyroskopu";
 "preference.title.gyroscope_sensitivity" = "Citlivost gyroskopového ovládání";
 "preference.detail.gyroscope_sensitivity" = "Upravit citlivost gyroskopového ovládání";
+"preference.manage_runtime.header.default" = "Preferovaná verze Javy";
 "preference.manage_runtime.default.1165" = "1.16.5 a starší";
 "preference.manage_runtime.default.117" = "1.17 a novější";
+"preference.manage_runtime.footer.default" = "Minecraft 1.16.5 a starší může běžet s novější verzí Javy, ale není zaručena kompatibilita s módy. Externí běh může být umístěn do složky „java_runtimes“. Změna verze Javy pro „Spustit .jar“ se projeví pouze v případě, že instalační program neočekává novější verzi Javy.";
 "preference.manage_runtime.footer.java8" = "Toto je výchozí verze pro Minecraft 1.16.5 a starší.";
 "preference.manage_runtime.footer.java17" = "Toto je výchozí verze pro Minecraft 1.17 a novější.";
 
 "preference.title.java_args" = "JVM spouštěcí argumenty";
 "preference.detail.java_args" = "Předá argumenty Javě spouštějíc Minecraft. Buďte opatrní, může to způsobit pád hry byly-li upraveny neprávně.";
 "preference.placeholder.java_args" = "Určit argumenty...";
+"preference.title.env_variables" = "Proměnné prostředí";
+"preference.detail.env_variables" = "Nastavte vlastní proměnné prostředí při spuštění Minecraftu. Buďte opatrní, může způsobit pád hry, pokud je nevhodně nastaveno.";
+"preference.title.auto_ram" = "Auto RAM";
 "preference.detail.auto_ram" = "Automaticky bude měnit množství RAM";
 "preference.warn.auto_ram" = "Vypnutí této možnosti na nejailbreakovaných zařízení může způsobit nestabilitu je-li změno. Pokračujte s opatrností.";
 "preference.title.allocated_memory" = "Přidělení paměti (MB)";
 "preference.detail.allocated_memory" = "Určete kolik paměti bude mít Minecraft";
 "preference.warn.allocated_memory" = "Tato možnost může způsobit nestabilitu při této a vyšších hodnotách, kvůli limitacím v operačním systému. Pokračuj s opatrností.";
+"preference.title.custom_env" = "Proměnné prostředí";
 "preference.detail.custom_env" = "Tato možnost je ve výstavbě. Mezitím vytvořte a upravte custom_env.txt.";
 
 "preference.title.debug_skip_wait_jit" = "Přeskočit dialog \"Čekání na JIT\"";
@@ -239,8 +255,11 @@
 "preference.profile.title.version_type" = "Typ verze";
 "preference.profile.title.default_touch_control" = "Dotykové ovládání";
 "profile.title.create" = "Vytvořit nový profil";
+"profile.title.install_fabric_quilt" = "Instalovat Fabric/Quilt";
 
 "controller_configurator.title.current" = "Soubor nastavení Gamepadu";
+"controller_configurator.title.type.xbox" = "Xbox";
+"controller_configurator.title.type.playstation" = "PlayStation";
 
 "controller_configurator.xbox.title.bumper_left" = "Levé tlačítko";
 "controller_configurator.xbox.title.bumper_right" = "Pravé tlačítko";
@@ -248,13 +267,23 @@
 "controller_configurator.xbox.title.trigger_right" = "Pravá spoušť";
 "controller_configurator.xbox.title.named_back" = "Průvodce";
 "controller_configurator.xbox.title.named_start" = "Nabídka";
+"controller_configurator.xbox.title.named_a" = "A";
+"controller_configurator.xbox.title.named_b" = "B";
+"controller_configurator.xbox.title.named_x" = "X";
+"controller_configurator.xbox.title.named_y" = "Y";
 "controller_configurator.xbox.title.dpad_up" = "Nahoru";
 "controller_configurator.xbox.title.dpad_down" = "Dolů";
 "controller_configurator.xbox.title.dpad_left" = "Vlevo";
 "controller_configurator.xbox.title.dpad_right" = "Vpravo";
 "controller_configurator.xbox.title.thumb_left" = "Kliknutí levé páčky";
 "controller_configurator.xbox.title.thumb_right" = "Kliknutí pravé páčky";
+
+"controller_configurator.playstation.title.bumper_left" = "L1";
+"controller_configurator.playstation.title.bumper_right" = "R1";
+"controller_configurator.playstation.title.trigger_left" = "L2";
+"controller_configurator.playstation.title.trigger_right" = "R2";
 "controller_configurator.playstation.title.named_back" = "Vybrat";
+"controller_configurator.playstation.title.named_start" = "Start";
 "controller_configurator.playstation.title.named_a" = "Kříž";
 "controller_configurator.playstation.title.named_b" = "Kruh";
 "controller_configurator.playstation.title.named_x" = "Čtverec";
@@ -263,6 +292,8 @@
 "controller_configurator.playstation.title.dpad_down" = "Dolů";
 "controller_configurator.playstation.title.dpad_left" = "Vlevo";
 "controller_configurator.playstation.title.dpad_right" = "Vpravo";
+"controller_configurator.playstation.title.thumb_left" = "L3";
+"controller_configurator.playstation.title.thumb_right" = "R3";
 
 "controller_configurator.section.config_files" = "Současný soubor nastavení";
 "controller_configurator.section.game_mappings" = "Herní mapování";
